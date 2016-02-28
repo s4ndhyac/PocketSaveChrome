@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    
+    "name":"PocketSave",
+    "description":"This extension saves the links saved in facebook to Pocket",
+    
+    "version":"1.0",
+    
+    "browser_action":{
+        "default_icon":""
+    },
+    
+    "permissions":[
+        "activeTab"
+    ]
+}
