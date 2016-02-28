@@ -7,10 +7,27 @@
     "version":"1.0",
     
     "browser_action":{
-        "default_icon":""
+        "default_icon":"icon.png"
     },
     
     "permissions":[
-        "activeTab"
+        "activeTab",
+        "webRequest",
+        "*://*.facebook.com/"
     ]
+    
+    "content_scripts":[
+        {
+            "matches":[
+                "https://facebook.com"
+            ],
+
+            "js":["jquery-2.2.1.min.js","content.js"]    
+        }
+    ]
+
+    "background":{
+        "scripts":["background.js"]
+    }
+
 }
