@@ -14,7 +14,7 @@
         "activeTab",
         "webRequest",
         "*://*.facebook.com/"
-    ]
+    ],
     
     "content_scripts":[
         {
@@ -24,10 +24,12 @@
 
             "js":["jquery-2.2.1.min.js","content.js"]    
         }
-    ]
+    ],
 
     "background":{
         "scripts":["background.js"]
-    }
+    },
+
+    "options_page":"options.html"
 
 }
